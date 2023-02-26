@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEO Location</title>
+</head>
+<body>
+    {% csrf_token %}    
+    <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <<td>Country : </td>
+                <td>{{data.country}}</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Country Code : </td>
+                <td>{{data.countryCode}}</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Timezone : </td>
+                <td>{{data.timezone}}</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>IP Address : </td>
+                <td>{{data.query}}</td>
+              </tr>
+              </tr>
+            </tbody>
+    </table>
+</body>
+</html>
